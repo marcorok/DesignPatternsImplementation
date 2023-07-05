@@ -1,16 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using FactoryMethod.Factory;
+using AbstractFactory;
 using Adapter;
 using ChainOfResponsibility;
 using ChainOfResponsibility.Handlers;
+using AbstractFactory.Factories;
+using AbstractFactory.Products;
 
-Tests testToRun = Tests.CHAIN_OF_RESPONSIBILITY;
+Tests testToRun = Tests.ABSTRACT_FACTORY;
 
 switch (testToRun)
 {
     case Tests.FACTORY_METHOD:
         TestFactoryMethod();
+        break;
+    case Tests.ABSTRACT_FACTORY:
+        TestAbstractFactory();
         break;
     case Tests.ADAPTER:
         TestAdapter();
@@ -22,6 +28,21 @@ switch (testToRun)
         Console.WriteLine("Nothing to test");
         break;
 
+}
+
+void TestAbstractFactory()
+{
+    //Initialize the factories. For client this would be transparent since the client does not care about types.
+    List<IFactory> factories = new List<IFactory>();
+    factories.Add(new ArtDecoFurnitureFactory());
+    factories.Add(new VictorianFurnitureFactory());
+    factories.Add(new ModernFurnitureFactory());
+    foreach (var f in factories)
+    {
+        IChair c = f.CreateChair();
+        c.SitOn();
+    }
+   
 }
 
 void TestCoR()
@@ -71,6 +92,8 @@ void TestFactoryMethod()
 public enum Tests
 {
     FACTORY_METHOD,
+    ABSTRACT_FACTORY,
     ADAPTER,
     CHAIN_OF_RESPONSIBILITY
+
 }
