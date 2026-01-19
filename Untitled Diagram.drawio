@@ -55,7 +55,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="YSRIWICf0w6XrFPUop1n-1" parent="1" style="swimlane;html=1;startSize=20;fontStyle=0;collapsible=0;horizontal=0;swimlaneLine=1;swimlaneFillColor=#ffffff;strokeWidth=2;whiteSpace=wrap;" value="User" vertex="1">
-          <mxGeometry height="100" width="510" x="20" y="30" as="geometry" />
+          <mxGeometry height="100" width="510" x="20" y="60" as="geometry" />
         </mxCell>
         <mxCell id="YSRIWICf0w6XrFPUop1n-7" edge="1" parent="YSRIWICf0w6XrFPUop1n-1" source="YSRIWICf0w6XrFPUop1n-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YSRIWICf0w6XrFPUop1n-5">
           <mxGeometry relative="1" as="geometry" />
@@ -67,7 +67,7 @@
           <mxGeometry height="50" width="100" x="100" y="22.5" as="geometry" />
         </mxCell>
         <mxCell id="YSRIWICf0w6XrFPUop1n-2" parent="1" style="swimlane;html=1;startSize=20;fontStyle=0;collapsible=0;horizontal=0;swimlaneLine=1;swimlaneFillColor=#ffffff;strokeWidth=2;whiteSpace=wrap;" value="Sequence" vertex="1">
-          <mxGeometry height="200" width="510" x="20" y="130" as="geometry" />
+          <mxGeometry height="200" width="510" x="20" y="160" as="geometry" />
         </mxCell>
         <mxCell id="YSRIWICf0w6XrFPUop1n-10" edge="1" parent="YSRIWICf0w6XrFPUop1n-2" source="YSRIWICf0w6XrFPUop1n-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="YSRIWICf0w6XrFPUop1n-9">
           <mxGeometry relative="1" as="geometry" />
@@ -108,6 +108,9 @@
         </mxCell>
         <mxCell id="YSRIWICf0w6XrFPUop1n-8" edge="1" parent="1" source="YSRIWICf0w6XrFPUop1n-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YSRIWICf0w6XrFPUop1n-6">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YSRIWICf0w6XrFPUop1n-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;CCBU Process Start&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="20" y="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
